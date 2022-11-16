@@ -4,9 +4,10 @@ import Home from '../views/Home'
 // import User from '../views/User'
 // const About= lazy(()=>import('../views/About'))
 // const User= lazy(()=>import('../views/User'))
-const Page1= lazy(()=>import('../views/Page1'))
-const Page2= lazy(()=>import('../views/Page2'))
+const Page1=lazy(()=>import('../views/Page1'))
+const Page2=lazy(()=>import('../views/Page2'))
 const Page301=lazy(()=>import('../views/Page301'))
+const Login =lazy(()=>import('../views/Login/index'))
 import {Navigate} from 'react-router-dom'
 const withLoadingComponent=(comp:JSX.Element)=><React.Suspense fallback={<div>loading...</div>}>{comp}</React.Suspense>
 const routes=[
@@ -31,6 +32,10 @@ const routes=[
                 element:withLoadingComponent(<Page301></Page301>)
             }
         ]
+    },
+    {
+        path:'/login',
+        element:<Login></Login>
     },
     {
         path:'*',

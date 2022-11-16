@@ -1,0 +1,27 @@
+.loginbox .ant-input,
+.loginbox .ant-input-password {
+  background-color: transparent;
+  border-color: #1890ff;
+  color: black;
+  height: 38px;
+}
+.loginbox .ant-input::-webkit-input-placeholder {
+  color: rgba(24, 144, 255, 0.6);
+}
+.loginbox .ant-input-password .ant-input {
+  height: 28px;
+}
+.loginbox .ant-input-password-icon.anticon,
+.loginbox .ant-input-password-icon.anticon:hover {
+  color: #1890ff;
+}
+.loginbox .captcha {
+  display: flex;
+}
+.loginbox .captcha .captchaImg {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.loginbox .loginBtn {
+  height: 38px;
+}
