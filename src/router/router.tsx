@@ -13,7 +13,7 @@ const withLoadingComponent=(comp:JSX.Element)=><React.Suspense fallback={<div>lo
 const routes=[
     {
         path:'/',
-        element:<Navigate to='/page1'></Navigate>
+        element:<Navigate to='/login'></Navigate>
     },
     {
         path:'/',
